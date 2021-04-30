@@ -4,6 +4,7 @@ const AboutUs = () => {
     return (
         <div>
             <AboutSection />
+            <p></p>
         </div>
     )
 }
