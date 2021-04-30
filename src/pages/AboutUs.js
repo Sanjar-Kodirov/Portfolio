@@ -1,10 +1,11 @@
 import React from 'react'
 import AboutSection from '../components/AboutSection'
+import SecvicesSection from '../components/SecvicesSection'
 const AboutUs = () => {
     return (
         <div>
             <AboutSection />
-            <p></p>
+            <SecvicesSection />
         </div>
     )
 }
