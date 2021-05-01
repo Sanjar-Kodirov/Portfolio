@@ -1,15 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import {About} from '../styles'
+import {Link} from  'react-router-dom'
 const Navbar = () => {
     return (
         <Nav>
             <h1>Capture</h1>
             <ul>
-                <li>Capture</li>
-                <li>About us</li>
-                <li>Our Work</li>
-                <li>Contact us</li>
+                <li><Link to="/"> About us </Link></li>
+                <li><Link to="/about"> Our Work</Link></li>
+                <li><Link to="/contact"> Contact us</Link></li>
             </ul>
         </Nav>
     )
