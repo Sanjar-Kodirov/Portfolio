@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact">
           <ContactUs />
         </Route>
-        <Route path="ourwork">
+        <Route path="/ourwork">
           <OurWork />
         </Route>
       </Switch>      
