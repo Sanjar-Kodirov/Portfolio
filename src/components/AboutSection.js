@@ -1,6 +1,5 @@
 import React from 'react'
 import home1 from '../img/home1.png'
-import styled from 'styled-components'
 import {About, Description,Image} from '../styles'
 
 
@@ -24,7 +23,7 @@ const AboutSection = () => {
                 {/* end of the title */}      
             </Description>
             <Image>
-                <img src={home1} alt=""/>
+                <img src={home1} alt="img"/>
             </Image> 
         </About>
     )

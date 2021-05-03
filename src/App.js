@@ -6,6 +6,7 @@ import OurWork from './pages/OurWork'
 import ContactUs from './pages/ContactUs'
 import {Switch, Route} from 'react-router-dom'
 import {BrowserRouter} from 'react-router-dom'
+import MovieDetail from './pages/MovieDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -19,8 +20,11 @@ function App() {
         <Route path="/contact">
           <ContactUs />
         </Route>
-        <Route path="/ourwork">
+        <Route path="/ourwork" exact>
           <OurWork />
+        </Route>
+        <Route path="/ourwork/:id">
+          <MovieDetail />
         </Route>
       </Switch>      
     </BrowserRouter>

@@ -11,17 +11,17 @@ const OurWork = () => {
             <Movie>
                 <h1>The racer</h1>
                 <div className="line"></div>
-                <Link><img src={athlete}/></Link> 
+                <Link to="/ourwork/the-athlete"><img alt="Img" src={athlete}/></Link> 
             </Movie>
             <Movie>
                 <h1>The racer</h1>
                 <div className="line"></div>
-                <Link><img src={theracer}/></Link> 
+                <Link to="/ourwork/the-racer"><img alt="Img" src={theracer}/></Link> 
             </Movie>
             <Movie>
                 <h1>The racer</h1>
                 <div className="line"></div>
-                <Link><img src={goodtimes}/></Link> 
+                <Link to="/ourwork/good-times"><img alt="Img" src={goodtimes}/></Link> 
             </Movie>
         </Work>
     )

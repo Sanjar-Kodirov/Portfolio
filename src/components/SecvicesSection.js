@@ -12,28 +12,28 @@ const SecvicesSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
-                            <img src={clock} />
+                            <img src={clock} alt="img"/>
                             <h3>Efficent</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={clock} />
+                            <img src={clock} alt="img"/>
                             <h3>Efficent</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={clock} />
+                            <img src={clock} alt="img"/>
                             <h3>Efficent</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={clock} />
+                            <img src={clock} alt="img"/>
                             <h3>Efficent</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>

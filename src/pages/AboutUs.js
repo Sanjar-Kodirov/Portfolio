@@ -6,7 +6,7 @@ const AboutUs = () => {
     return (
         <div>
             <AboutSection />
-            <SecvicesSection />
+              <SecvicesSection />
             <Faq />
         </div>
     )
