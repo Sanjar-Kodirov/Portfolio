@@ -1,25 +1,54 @@
 import React from 'react'
 import home1 from '../img/home1.png'
+import {motion} from 'framer-motion'
 import {About, Description,Image} from '../styles'
 
 
 const AboutSection = () => {
+    const title = {
+        hidden: {opacity: 0},
+        show: {
+            opacity: 1,
+            transition: {
+                duration: 5
+            }
+        }
+    }
+    const container = {
+        hidden: {
+            x: 100
+        },
+        show: {
+            x: 0,
+            transition: {
+                duration: 2,
+                staggerChildren: 0.25,
+                easy: "easy-in-out",
+                when: "afterChildren"
+            }
+        }
+    }
     return (
         <About>
             <Description>
-                <div className="title">
+                <motion.div  
+                    variants={container} 
+                    initial="hidden" 
+                    animate="show" 
+                    className="title"
+                >
                     <div className="hide">
-                        <h2>We work to make</h2>
+                        <motion.h2 variants={title}>We work to make</motion.h2>
                     </div>
                     <div  className="hide">
-                    <h2>your <span> dreams </span> come </h2>
+                    <motion.h2 variants={title}> <span> dreams </span>  come </motion.h2>
                     </div>
                     <div  className="hide">
-                    <h2>true</h2>
+                    <motion.h2 variants={title}>true</motion.h2>
                     </div>
-                    <p>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills to help you achieve it.</p>
-                    <button>Contact us</button>
-                </div>   
+                    <motion.p variants={title}>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills to help you achieve it.</motion.p>
+                    <motion.button variants={title}>Contact us</motion.button>
+                </motion.div>   
                 {/* end of the title */}      
             </Description>
             <Image>
@@ -28,30 +57,5 @@ const AboutSection = () => {
         </About>
     )
 }
-
-// const About = styled.div`
-//     min-height: 90vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     padding: 5rem 10rem;
-// `
-// const Description = styled.div`
-//     flex: 1;
-//     padding-right: 5rem;
-//     h2{
-//         font-weight: lighter;
-//     }
-// `
-// const Image = styled.div`
-//     flex: 1;
-//     overflow: hidden;
-//     img{
-//         width: 100%;
-//         min-height: 80vh;
-//         object-fit: cover;
-//     }
-    
-// `
 
 export default AboutSection
